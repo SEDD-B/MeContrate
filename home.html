@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeContrate - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <h1 class="logo">MeContrate</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="#" id="tabHome" class="active">Home</a></li>
+        <li><a href="#" id="tabAnuncios">Anúncios</a></li>
+        <li><a href="#" id="btnLogout" class="danger">Sair</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+
+      <!-- HOME -->
+      <section id="homeTab">
+        <!-- CARD DE BOAS-VINDAS E PERFIL -->
+        <div class="profile-card">
+          <h2>Olá, <span id="userGreeting"></span> 👋</h2>
+          <p id="userRole"></p>
+          <div class="profile-info">
+            <p><strong>Tipo:</strong> <span id="profileType"></span></p>
+            <p><strong>Disponibilidade:</strong> <span id="profileAvailability"></span></p>
+            <p><strong>Vagas Aplicadas:</strong> <span id="appliedCount">0</span></p>
+          </div>
+          <div class="profile-actions">
+            <button class="btn primary hidden" id="btnCreateVacancy">Criar Anúncio</button>
+          </div>
+        </div>
+
+        <!-- FEED RECENTE -->
+        <div class="recent-vacancies">
+          <h2>Vagas Recentes</h2>
+          <div id="recentFeed" class="feed"></div>
+        </div>
+      </section>
+
+      <!-- ANÚNCIOS / FEED -->
+      <section id="anunciosTab" class="hidden">
+        <h2>Vagas Disponíveis</h2>
+        <div id="vacancyFeed" class="feed"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modalClose" class="close">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

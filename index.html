@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MeContrate - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <h1 class="logo">MeContrate</h1>
+
+      <!-- LOGIN -->
+      <form id="loginForm" class="form">
+        <label>E-mail</label>
+        <input type="email" id="loginEmail" placeholder="Digite seu e-mail" required>
+        <label>Senha</label>
+        <input type="password" id="loginPass" placeholder="Senha" required>
+        <button type="submit" class="btn primary">Entrar</button>
+        <p class="muted">Não tem conta? <a href="#" id="showRegister">Criar</a></p>
+      </form>
+
+      <!-- REGISTRO -->
+      <form id="registerForm" class="form hidden">
+        <label>Nome</label>
+        <input type="text" id="regName" placeholder="Seu nome" required>
+        <label>E-mail</label>
+        <input type="email" id="regEmail" placeholder="Digite seu e-mail" required>
+        <label>Senha</label>
+        <input type="password" id="regPass" placeholder="Senha" required>
+        <label>Tipo</label>
+        <select id="regType">
+          <option value="freelancer">Freelancer</option>
+          <option value="employer">Empregador</option>
+        </select>
+        <label>Disponibilidade</label>
+        <input id="regAvailability" placeholder="Ex: Seg-Sex 18h-23h">
+        <button type="submit" class="btn primary">Criar Conta</button>
+        <p class="muted"><a href="#" id="showLogin">Já tenho conta</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
