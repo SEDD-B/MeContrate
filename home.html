@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MeContrate - Home</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Font (Google) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="app-container">
@@ -24,8 +28,48 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="main-content">
 
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <div class="search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <input id="searchInput" placeholder="Buscar vagas, empresas, localidades..." />
+        </div>
+        <div class="profile-mini">
+          <div class="avatar" id="miniAvatar">U</div>
+        </div>
+      </div>
+
       <!-- HOME -->
       <section id="homeTab">
+        <!-- HERO -->
+        <div class="hero">
+          <div class="hero-left">
+            <h1>Encontre o trabalho ideal — rápido e com estilo</h1>
+            <p>Vagas selecionadas com curadoria, perfil do candidato e notificações inteligentes. Encontre oportunidades remotas, presenciais e híbridas.</p>
+            <div class="hero-cta">
+              <button id="btnExplore" class="btn ghost">Explorar Vagas</button>
+              <button id="btnPost" class="btn primary hidden">Publicar Vaga</button>
+            </div>
+          </div>
+          <div class="hero-right">
+            <!-- placeholder visual, você pode trocar por imagem/ilustração -->
+            <div style="width:220px;height:120px;border-radius:12px;background:linear-gradient(90deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff">MeContrate</div>
+          </div>
+        </div>
+
+        <!-- CARROSSEL MELHORES ANÚNCIOS -->
+        <div class="best-vacancies">
+          <h2>🌟 Destaques</h2>
+          <div class="carousel" id="bestCarousel">
+            <button class="carousel-prev" aria-label="Anterior">‹</button>
+            <div class="carousel-track-wrap">
+              <div class="carousel-track" id="carouselTrack"></div>
+            </div>
+            <button class="carousel-next" aria-label="Próximo">›</button>
+          </div>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+
         <!-- CARD DE BOAS-VINDAS E PERFIL -->
         <div class="profile-card">
           <h2>Olá, <span id="userGreeting"></span> 👋</h2>
@@ -43,14 +87,14 @@
         <!-- FEED RECENTE -->
         <div class="recent-vacancies">
           <h2>Vagas Recentes</h2>
-          <div id="recentFeed" class="feed"></div>
+          <div id="recentFeed" class="feed-grid"></div>
         </div>
       </section>
 
       <!-- ANÚNCIOS / FEED -->
       <section id="anunciosTab" class="hidden">
         <h2>Vagas Disponíveis</h2>
-        <div id="vacancyFeed" class="feed"></div>
+        <div id="vacancyFeed" class="feed-grid"></div>
       </section>
 
     </main>
