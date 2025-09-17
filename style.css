@@ -327,6 +327,7 @@ body{
    RESPONSIVIDADE
 ================================== */
 @media (max-width: 1023px) and (min-width: 768px){
+  * { max-width: 500px; }
   .sidebar{ width:200px; }
   .main-content{ padding:24px }
   .hero-left{ max-width:80% }
@@ -334,6 +335,7 @@ body{
 }
 
 @media (max-width: 767px){
+  * { max-width: 400px; }
   .sidebar{ display:none; position:fixed; left:0; top:0; height:100vh; z-index:9999 }
   .main-content{ margin-left:0; padding:18px }
   .topbar{ flex-direction:column; gap:10px }
