@@ -12,6 +12,105 @@
   --radius: 14px;
 }
 
+/* =============================
+   RESPONSIVIDADE GLOBAL
+   ============================= */
+
+/* === TABLET (768px até 1023px) === */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 24px;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+
+  .hero-left {
+    max-width: 80%;
+  }
+
+  .feed-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+/* === MOBILE (até 767px) === */
+@media (max-width: 767px) {
+  body {
+    width: 760px!important;
+    box-sizing: border-box!important;
+  }
+  /* Layout geral */
+  .app-container {
+    flex-direction: column!important;
+  }
+
+  .sidebar {
+    display: none!important; /* escondemos a sidebar no mobile */
+  }
+
+  .main-content {
+    margin-left: 0!important;
+    padding: 16px!important;
+  }
+
+  /* Topbar */
+  .topbar {
+    flex-direction: column!important;
+    gap: 10px!important;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column!important;
+    text-align: center!important;
+    padding: 20px!important;
+  }
+  .hero-left {
+    max-width: 100%!important;
+  }
+  .hero h1 {
+    font-size: 22px!important;
+  }
+  .hero p {
+    font-size: 14px!important;
+  }
+
+  /* Grid de vagas */
+  .feed-grid {
+    grid-template-columns: 1fr!important;
+    gap: 14px!important;
+  }
+
+  /* Carrossel */
+  .carousel-item {
+    min-width: 220px!important;
+    max-width: 220px!important;
+  }
+
+  /* Login / cadastro */
+  .auth-card {
+    width: 90%!important;
+    padding: 24px 18px!important;
+  }
+
+  .form input,
+  .form select {
+    font-size: 0.9rem!important;
+  }
+}
+
+/* === DESKTOP GRANDE (a partir de 1440px) === */
+@media (min-width: 1440px) {
+  .main-content {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+
 /* RESET */
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;}
