@@ -57,7 +57,7 @@
 
   btnLogout.addEventListener('click',()=>{
     localStorage.removeItem('loggedUser');
-    window.location.href='index.html';
+    window.location.href='/index.html';
   });
 
   modalClose?.addEventListener('click',()=> modal.classList.add('hidden'));
