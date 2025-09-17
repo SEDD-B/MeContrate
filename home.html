@@ -19,7 +19,7 @@
     <!-- BOTÃO MENU MOBILE -->
     <nav class="d-md-none navbar-black">
       <button class="btn btn-primary m-2 b5" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-        Menu
+        ☰
       </button>
 
       <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
@@ -55,10 +55,7 @@
       <!-- TOPBAR -->
       <div class="topbar d-flex justify-content-between align-items-center mb-4">
         <div class="search d-flex align-items-center">
-          <input id="searchInput" placeholder="Buscar vagas, empresas, localidades..." class="form-control ms-2"/>
-        </div>
-        <div class="profile-mini d-flex align-items-center">
-          <div class="avatar" id="miniAvatar">🔍</div>
+          <input id="searchInput" placeholder="Buscar vagas, empresas, localidades..." class="form-control ms-2"/><div class="avatar cursor-pointer" id="miniAvatar">🔍</div>
         </div>
       </div>
 
@@ -79,27 +76,20 @@
         <!-- CARROSSEL MELHORES ANÚNCIOS -->
         <div class="best-vacancies mb-5">
           <h2>🌟 Destaques</h2>
-          <div class="carousel" id="bestCarousel">
-            <button class="carousel-prev" aria-label="Anterior">‹</button>
-            <div class="carousel-track-wrap">
-              <div class="carousel-track justify-content-between" id="carouselTrack">
-                <div style="width:220px;height:120px;border-radius:12px;background:linear-gradient(90deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff">
-                  Anuncie aqui
-                </div>
-                <div style="width:220px;height:120px;border-radius:12px;background:linear-gradient(90deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff">
-                  Anuncie aqui
-                </div>
-                <div style="width:220px;height:120px;border-radius:12px;background:linear-gradient(90deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff">
-                  Anuncie aqui
-                </div>
-                <div style="width:220px;height:120px;border-radius:12px;background:linear-gradient(90deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff">
-                  Anuncie aqui
-                </div>
-              </div>
+
+          <div class="carousel-wrapper">
+            <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-item">Anuncie aqui</div>
+              <div class="carousel-item">Anuncie aqui</div>
+              <div class="carousel-item">Anuncie aqui</div>
+              <div class="carousel-item">Anuncie aqui</div>
+              <div class="carousel-item">Anuncie aqui</div>
             </div>
-            <button class="carousel-next" aria-label="Próximo">›</button>
+
+            <button class="carousel-btn next" aria-label="Próximo">›</button>
           </div>
-          <div class="carousel-dots" id="carouselDots"></div>
         </div>
 
         <!-- CARD DE BOAS-VINDAS E PERFIL -->

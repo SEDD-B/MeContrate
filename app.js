@@ -97,3 +97,12 @@
   }
 
 })();
+
+// === CARROSSEL DE DESTAQUES ===
+const track = document.getElementById('carouselTrack');
+document.querySelector('.carousel-btn.prev')?.addEventListener('click', () => {
+  track.scrollBy({ left: -260, behavior: 'smooth' });
+});
+document.querySelector('.carousel-btn.next')?.addEventListener('click', () => {
+  track.scrollBy({ left: 260, behavior: 'smooth' });
+});
