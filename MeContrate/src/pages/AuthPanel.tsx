@@ -10,6 +10,7 @@ import {
   Field,
   Container,
   Heading,
+  RadioGroup,
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useState } from "react";
@@ -22,6 +23,7 @@ type User = {
 }
 
 const AuthPanel: React.FC = () => {
+  const [value, setValue] = useState<string | null>(null)
   const [changeAuth, setChangeAuth] = useState('login')
   const [user, setUser] = useState<User>({
     fullname: '',
@@ -98,9 +100,14 @@ const AuthPanel: React.FC = () => {
     })
   };
 
+  const items = [
+    { label: "Freelancer", value: "1" },
+    { label: "Contratante", value: "2" },
+  ]
+
   console.log(user)
   return (
-    <Box bg="radial-gradient(circle at top, #1a1a1d, #0f0f10 70%)" color="white" maxH={{base: "100%"}} py={{base: 40}} display="flex" justifyContent="center">
+    <Box bg="radial-gradient(circle at top, #1a1a1d, #0f0f10 70%)" color="white" maxH={{base: "100% "}} py={{base: 40}} display="flex" justifyContent="center">
       <Container maxW={{base: "xs", md: "lg"}} minH={{base: "sm", md: "50vh"}} bg="gray.800" p={10} borderRadius={{base: "none", md: "lg"}} boxShadow="0 8px 32px rgba(0,0,0,0.6)" alignContent="center">
         <Heading
           fontWeight="bold"
@@ -151,6 +158,15 @@ const AuthPanel: React.FC = () => {
                     <Field.Label>Confirme a Senha</Field.Label>
                     <Input name="confirmPassword" css={{ "--focus-color": "#ff0095" }} bg="gray.900" type="password" placeholder="Confirme a Senha" onChange={handleChange} />
                   </Field.Root>*/}
+                  <RadioGroup.Root w="100%" value={value} onValueChange={(e) => setValue(e.value)}>
+                  {items.map((item) => (
+                    <RadioGroup.Item key={item.value} value={item.value} mx="10" mt="5">
+                      <RadioGroup.ItemHiddenInput />
+                      <RadioGroup.ItemIndicator />
+                      <RadioGroup.ItemText>{item.label}</RadioGroup.ItemText>
+                    </RadioGroup.Item>
+                  ))}
+                  </RadioGroup.Root>
                   <Button type="submit" colorScheme="yellow" bg="gray.900" size="lg" mt={4} border="1px solid" borderColor="#ff0095" color="white" transition="1s ease-in-out" _hover={{ bg: "#ff0095" }}>Cadastrar</Button>
                 </Stack>
                 <Text mt={4} textAlign="center">
