@@ -154,11 +154,11 @@ const AuthPanel: React.FC = () => {
                     <Field.Label>Senha</Field.Label>
                     <Input value={user.password} name="password" css={{ "--focus-color": "#ff0095" }} bg="gray.900" type="password" placeholder="Crie uma senha" onChange={handleChange} />
                   </Field.Root>
-                  {/*<Field.Root id="confirmPassword" required>
+                  <Field.Root id="confirmPassword" required>
                     <Field.Label>Confirme a Senha</Field.Label>
                     <Input name="confirmPassword" css={{ "--focus-color": "#ff0095" }} bg="gray.900" type="password" placeholder="Confirme a Senha" onChange={handleChange} />
-                  </Field.Root>*/}
-                  <RadioGroup.Root w="100%" value={value} onValueChange={(e) => setValue(e.value)}>
+                  </Field.Root>
+                  <RadioGroup.Root mx="auto" value={value} onValueChange={(e) => setValue(e.value)}>
                   {items.map((item) => (
                     <RadioGroup.Item key={item.value} value={item.value} mx="10" mt="5">
                       <RadioGroup.ItemHiddenInput />
