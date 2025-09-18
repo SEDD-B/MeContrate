@@ -1,0 +1,13 @@
+# Logs
+MeContrate/logs
+MeContrate/*.log
+MeContrate/npm-debug.log*
+MeContrate/yarn-debug.log*
+MeContrate/yarn-error.log*
+MeContrate/pnpm-debug.log*
+MeContrate/lerna-debug.log*
+
+MeContrate/node_modules
+MeContrate/dist
+MeContrate/dist-ssr
+MeContrate/*.local
