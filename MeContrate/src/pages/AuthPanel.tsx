@@ -100,7 +100,7 @@ const AuthPanel: React.FC = () => {
 
   console.log(user)
   return (
-    <Box bg="radial-gradient(circle at top, #1a1a1d, #0f0f10 70%)" color="white" maxH="100vh" py={{base: 40}} display="flex" justifyContent="center">
+    <Box bg="radial-gradient(circle at top, #1a1a1d, #0f0f10 70%)" color="white" maxH={{base: "100%"}} py={{base: 40}} display="flex" justifyContent="center">
       <Container maxW={{base: "xs", md: "lg"}} minH={{base: "sm", md: "50vh"}} bg="gray.800" p={10} borderRadius={{base: "none", md: "lg"}} boxShadow="0 8px 32px rgba(0,0,0,0.6)" alignContent="center">
         <Heading
           fontWeight="bold"
