@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Routes>
         <Route path="/">
-          { isAuthenticated ?
+          { !isAuthenticated ?
             (<Route index element={<Dashboard />} />)
             :
             (<Route index element={<AuthPanel />} />)
