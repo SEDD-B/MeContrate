@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router'
-import { Provider } from './components/ui/provider';
-import { AuthProvider } from './context/AuthContext';
-import App from './App';
+import { Provider } from './shared/components/ui/provider';
+import { AuthProvider } from './shared/context/AuthContext';
+import App from './app/App';
 
 
 const root = document.getElementById("root");

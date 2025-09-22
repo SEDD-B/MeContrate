@@ -1,56 +1,93 @@
-import { NotebookPen } from "lucide-react";
-import Frame from "../components/Dashboard/Frame";
-import { useAuth } from "../context/AuthContext";
-import { Box, Container, Flex, Text } from "@chakra-ui/react";
+import { Check, DollarSign, Loader, NotebookPen, PenBoxIcon, Star } from "lucide-react";
+import Frame from "../shared/components/Dashboard/Frame";
+import { useAuth } from "../shared/context/AuthContext";
+import { Avatar, Box, Container, Flex, Text } from "@chakra-ui/react";
 // import { Outlet } from "react-router";
 
 
 export default function Dashboard() {
     const { user } = useAuth()
     return (
-        <Box
-            bg="radial-gradient(circle at top, #1a1a1d, #0f0f10 70%)"
-            width={{base: "xs", md:"100dvw"}}
-            height={{base: "100dvh"}}
-            justifyContent="center"
-            alignContent="center"
+        <Container
+            p={0}
+            m={0}
         >
-            <Container
-                width={{base: "xs", md: "90dvw"}}
-                height={{base: "xs", md: "90dvh"}}
-                bg="gray.900"
-                borderRadius={{base: "none", md: "lg"}}
-                boxShadow="0 8px 32px rgba(0,0,0,0.6)"
-                flexDirection="column"
-                p={5}
+            <Box
+                //bg="radial-gradient(circle at top, #222227ff, #111113ff 70%)"
+                bg="gray.800"
+                width={{base: "xs", md:"100dvw"}}
+                height={{base: "100dvh"}}
+                justifyContent="center"
+                alignContent="start"
+                textAlign="end"
             >
-                <Text
-                    fontSize={"3xl"}
-                    fontWeight={"bold"}
+                <Flex
+                    alignItems="center"
+                    justifyContent="flex-end"
+                    m={3}
                 >
-                    Olá, {user?.name} Gustavo
-                </Text>
+                    <Flex
+                        flexDirection="column"
+                        alignItems="center"
+                        mr={2}
+                    >
+                        <Text
+                            fontSize={"md"}
+                            fontWeight={"bold"}
+                            alignSelf="end"
+                        >
+                            {user?.name}
+                        </Text>
+                        <Text as={"small"}>
+                            Desenvolvedor Front-End
+                        </Text>
+                    </Flex>
+                    <Avatar.Root
+                        size={"xl"}
+                        colorPalette={"green"}
+                    >
+                        <Avatar.Fallback
+                            name={user?.name}
+                        />
+                    </Avatar.Root>
+                </Flex>
                 <Flex
                     direction="row"
                     justifyContent="center"
-                    gap={24}
+                    gap={16}
                 >
+                    <Frame
+                        title="Ganhos Totais"
+                        quantity={8320}
+                    >
+                        <DollarSign />
+                    </Frame>
                     <Frame
                         title="Ofertas"
                         quantity={5}
                     >
-                        <NotebookPen />
+                        <PenBoxIcon />
                     </Frame>
                     <Frame
                         title="Em andamento"
                         quantity={3}
-                    />
+                    >
+                        <Loader />
+                    </Frame>
                     <Frame
                         title="Concluídos"
                         quantity={6}
-                    />
+                    >
+                        <Check />
+                    </Frame>
+                    <Frame
+                        title="Avaliação Média"
+                        quantity={4.8}
+                    >
+                        <Star />
+                    </Frame>
                 </Flex>
-            </Container>
-        </Box>
+            </Box>
+        </Container>
     )
 }

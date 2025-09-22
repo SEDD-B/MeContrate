@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
-import Dashboard from "./pages/Dashboard";
-import AuthPanel from "./pages/AuthPanel";
-import { useAuth } from "./context/AuthContext";
+import Dashboard from "../pages/Dashboard";
+import AuthPanel from "../pages/AuthPanel";
+import { useAuth } from "../shared/context/AuthContext";
 
 export default function App() {
   const { isAuthenticated } = useAuth();
@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Routes>
         <Route path="/">
-          { !isAuthenticated ?
+          { isAuthenticated ?
             (<Route index element={<Dashboard />} />)
             :
             (<Route index element={<AuthPanel />} />)

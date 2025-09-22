@@ -1,5 +1,5 @@
-import { Toaster, toaster } from "../components/ui/toaster";
-import { useAuth } from "../context/AuthContext";
+import { Toaster, toaster } from "../shared/components/ui/toaster";
+import { useAuth } from "../shared/context/AuthContext";
 import {
   Box,
   Button,
