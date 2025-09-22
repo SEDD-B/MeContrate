@@ -1,4 +1,4 @@
-import { Check, DollarSign, Loader, NotebookPen, PenBoxIcon, Star } from "lucide-react";
+import { Check, DollarSign, Loader, PenBoxIcon, Star } from "lucide-react";
 import Frame from "../shared/components/Dashboard/Frame";
 import { useAuth } from "../shared/context/AuthContext";
 import { Avatar, Box, Container, Flex, Text } from "@chakra-ui/react";
