@@ -15,7 +15,7 @@ export default function Dashboard() {
             <Box
                 //bg="radial-gradient(circle at top, #222227ff, #111113ff 70%)"
                 bg="gray.800"
-                width={{base: "xs", md:"100dvw"}}
+                width={{base: "100dvw", md:"100dvw"}}
                 height={{base: "100dvh"}}
                 justifyContent="center"
                 alignContent="start"
@@ -24,7 +24,8 @@ export default function Dashboard() {
                 <Flex
                     alignItems="center"
                     justifyContent="flex-end"
-                    m={3}
+                    mr={{base: 1, md: 3}}
+                    my={{base: 2, md: 3}}
                 >
                     <Flex
                         flexDirection="column"
@@ -52,9 +53,11 @@ export default function Dashboard() {
                     </Avatar.Root>
                 </Flex>
                 <Flex
-                    direction="row"
+                    direction={{base: "row", md: "row"}}
+                    flexWrap="wrap"
                     justifyContent="center"
-                    gap={16}
+                    alignItems="center"
+                    gap={{base: 2, md: 16}}
                 >
                     <Frame
                         title="Ganhos Totais"

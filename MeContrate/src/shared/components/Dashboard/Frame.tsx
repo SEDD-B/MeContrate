@@ -11,9 +11,11 @@ interface FrameProps {
 export default function Frame ({ title, quantity, children }: FrameProps) {
     return (
         <Flex
+            minWidth={{base: "185px"}}
             width="fit-content"
-            height="90px"
-            justifyContent="space-around"
+            height={{base: "60px", md: "90px"}}
+            //justifyContent={{base: "flex-start", md: "space-around"}}
+            justifyContent="flex-start"
             alignItems="center"
             direction="row"
             //borderImage="linear-gradient(90deg, #2a5cff, #c46cff) 1"
@@ -28,9 +30,9 @@ export default function Frame ({ title, quantity, children }: FrameProps) {
             _hover={{bg:"radial-gradient(#151515, #111111) padding-box, linear-gradient(90deg, #2a5cff, #c46cff) border-box"}}
         >
             <Flex
-                width="50px"
-                height="50px"
-                bg="gray.800"
+                width={{base: "40px", md: "50px"}}
+                height={{base: "40px", md: "50px"}}
+                bg="radial-gradient(circle at top, #47474fff, #111113ff 70%)"
                 alignItems="center"
                 justifyContent="center"
                 borderRadius="md"
@@ -40,19 +42,19 @@ export default function Frame ({ title, quantity, children }: FrameProps) {
             <Flex
                 flexDirection="column"
                 alignItems="start"
-                justifyContent="center"
+                justifyContent={{base: "flex-start", md: "center"}}
             >
                 <Box>
                     <Text
-                        fontSize="3xl"
+                        fontSize={{base:"sm", md:"3xl"}}
                         fontWeight="bold"
                     >{ title == "Ganhos Totais" ? (`R$${quantity.toLocaleString()}`) : (`${quantity}`)}</Text>
                 </Box>
                 <Box
-                    mt={-3}
+                    mt={{base: -1 , md: -3}}
                 >
                     <Text
-                        fontSize="md"
+                        fontSize={{base:"xs", md: "md"}}
                         fontWeight="bold"
                     >{title}</Text>
                 </Box>
