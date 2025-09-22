@@ -48,7 +48,7 @@ export default function Frame ({ title, quantity, children }: FrameProps) {
                     <Text
                         fontSize={{base:"sm", md:"3xl"}}
                         fontWeight="bold"
-                    >{ title == "Ganhos Totais" ? (`R$${quantity.toLocaleString()}`) : (`${quantity}`)}</Text>
+                    >{ title == "Ganhos Totais" ? (`${quantity.toLocaleString('pt-BR', {style: "currency", currency: "BRL"})}`) : (`${quantity}`)}</Text>
                 </Box>
                 <Box
                     mt={{base: -1 , md: -3}}

@@ -61,7 +61,7 @@ export default function Dashboard() {
                 >
                     <Frame
                         title="Ganhos Totais"
-                        quantity={8320}
+                        quantity={117350.97}
                     >
                         <DollarSign />
                     </Frame>
