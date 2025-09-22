@@ -53,7 +53,7 @@ export default function Dashboard() {
                     </Avatar.Root>
                 </Flex>
                 <Flex
-                    direction={{base: "row", md: "row"}}
+                    direction={{base: "column", md: "row"}}
                     flexWrap="wrap"
                     justifyContent="center"
                     alignItems="center"

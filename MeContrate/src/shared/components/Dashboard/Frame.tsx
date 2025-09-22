@@ -11,9 +11,9 @@ interface FrameProps {
 export default function Frame ({ title, quantity, children }: FrameProps) {
     return (
         <Flex
-            minWidth={{base: "185px"}}
+            minWidth={{base: "90dvw", md: "175px"}}
             width="fit-content"
-            height={{base: "60px", md: "90px"}}
+            height="90px"
             //justifyContent={{base: "flex-start", md: "space-around"}}
             justifyContent="flex-start"
             alignItems="center"
@@ -46,7 +46,7 @@ export default function Frame ({ title, quantity, children }: FrameProps) {
             >
                 <Box>
                     <Text
-                        fontSize={{base:"sm", md:"3xl"}}
+                        fontSize="3xl"
                         fontWeight="bold"
                     >{ title == "Ganhos Totais" ? (`${quantity.toLocaleString('pt-BR', {style: "currency", currency: "BRL"})}`) : (`${quantity}`)}</Text>
                 </Box>
@@ -54,8 +54,8 @@ export default function Frame ({ title, quantity, children }: FrameProps) {
                     mt={{base: -1 , md: -3}}
                 >
                     <Text
-                        fontSize={{base:"xs", md: "md"}}
-                        fontWeight="bold"
+                        fontSize="md"
+                        fontWeight="light"
                     >{title}</Text>
                 </Box>
             </Flex>
