@@ -30,8 +30,8 @@ export default function Frame ({ title, quantity, children }: FrameProps) {
             _hover={{bg:"radial-gradient(#151515, #111111) padding-box, linear-gradient(90deg, #2a5cff, #c46cff) border-box"}}
         >
             <Flex
-                width={{base: "40px", md: "50px"}}
-                height={{base: "40px", md: "50px"}}
+                width={{base: "60px", md: "60px"}}
+                height={{base: "60px", md: "60px"}}
                 bg="radial-gradient(circle at top, #47474fff, #111113ff 70%)"
                 alignItems="center"
                 justifyContent="center"

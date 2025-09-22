@@ -1,7 +1,9 @@
 import { Check, DollarSign, Loader, PenBoxIcon, Star } from "lucide-react";
 import Frame from "../shared/components/Dashboard/Frame";
 import { useAuth } from "../shared/context/AuthContext";
-import { Avatar, Box, Container, Flex, Text } from "@chakra-ui/react";
+import { Avatar, Box, Container, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
+import MonthlyEarningsDarkChart from "../shared/components/Dashboard/MonthlyEarningsDarkChart";
+import ProjectTypeDonutDarkChart from "../shared/components/Dashboard/ProjectTypeDonutDarkChart";
 // import { Outlet } from "react-router";
 
 
@@ -15,11 +17,13 @@ export default function Dashboard() {
             <Box
                 //bg="radial-gradient(circle at top, #222227ff, #111113ff 70%)"
                 bg="gray.800"
-                width={{base: "100dvw", md:"100dvw"}}
-                height={{base: "100dvh"}}
+                width="100dvw"
+                minHeight="100dvh"
+                height="fit-content"
                 justifyContent="center"
                 alignContent="start"
                 textAlign="end"
+                pb={5}
             >
                 <Flex
                     alignItems="center"
@@ -90,7 +94,23 @@ export default function Dashboard() {
                         <Star />
                     </Frame>
                 </Flex>
+                <Grid
+                    width="100%"
+                    height="fit-content"
+                    templateColumns="repeat(12, 1fr)"
+                    px={{base: 10, md: 20}}
+                    gap={{base: 4, md: 4}}
+                    mt={5}
+                >
+                    <GridItem colSpan={{base: 12, md: 8}}>
+                        <MonthlyEarningsDarkChart />
+                    </GridItem>
+                    <GridItem colSpan={{base: 12, md: 4}}>
+                        <ProjectTypeDonutDarkChart />
+                    </GridItem>
+                </Grid>
             </Box>
+            
         </Container>
     )
 }
