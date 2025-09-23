@@ -61,7 +61,7 @@ export default function Dashboard() {
                     flexWrap="wrap"
                     justifyContent="center"
                     alignItems="center"
-                    gap={{base: 2, md: 16}}
+                    gap={{base: 2, md: 16, lg: 20}}
                 >
                     <Frame
                         title="Ganhos Totais"

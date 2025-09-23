@@ -29,9 +29,10 @@ function ProjectTypeDonutDarkChart() {
       height="100%"
     >
       <h2 style={{color: "#fff", textAlign: "center"}}>Distribuição de Tipos de Projeto</h2>
-      <ResponsiveContainer width="100%" height={350}>
+      <ResponsiveContainer width="100%" height={350} style={{marginLeft: "auto", marginRight: "auto"}}>
         <PieChart>
           <Pie
+            width="60%"
             data={data}
             cx="50%"
             cy="50%"
