@@ -20,15 +20,15 @@ const COLORS = ["#4f8cff", "#00d8a7", "#ffb347", "#e94f7a"];
 function ProjectTypeDonutDarkChart() {
   return (
     <Box
-      //bg="gray.950"
-      bg="radial-gradient(circle at top, #222228ff, #0a0a0aff 70%)"
+      bg="gray.950"
+      //bg="radial-gradient(circle at top, #222228ff, #0a0a0aff 70%)"
       p="24px"
       borderRadius="12px"
       color="#fff"
       width="100%"
       height="100%"
     >
-      <h2 style={{color: "#fff", textAlign: "center"}}>Distribuição de Tipos de Projeto</h2>
+      <h2 style={{color: "#fff", textAlign: "center", fontWeight: "bold", fontSize: "20px"}}>Distribuição de Tipos de Projeto</h2>
       <ResponsiveContainer width="100%" height={350} style={{marginLeft: "auto", marginRight: "auto"}}>
         <PieChart>
           <Pie
@@ -47,9 +47,9 @@ function ProjectTypeDonutDarkChart() {
           </Pie>
           <Tooltip
             contentStyle={{
-              background: "#222", border: "none", color: "#fff"
+              background: "#383838", border: "none", color: "#ffffff"
             }}
-            labelStyle={{ color: "#fff" }}
+            labelStyle={{ color: "#ffffff" }}
             formatter={(value, name) => [`${value}`, `${name}`]}
           />
           <Legend

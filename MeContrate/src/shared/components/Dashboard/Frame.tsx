@@ -26,7 +26,6 @@ export default function Frame ({ title, quantity, children }: FrameProps) {
             p={5}
             gap={3}
             cursor="pointer"
-            transition="2s ease-in-out"
             _hover={{bg:"radial-gradient(#151515, #111111) padding-box, linear-gradient(90deg, #2a5cff, #c46cff) border-box"}}
         >
             <Flex
