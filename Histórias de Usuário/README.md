@@ -60,7 +60,7 @@
 ### Cadastro e Perfil
 Feature: Cadastro de perfil de freelancer
 
-  Scenario: Freelancer cria seu perfil com dados e documentos
+  **Scenario**: Freelancer cria seu perfil com dados e documentos
   
   **Given** que o freelancer acessa a tela de cadastro
     
@@ -223,6 +223,6 @@ Feature: Sistema modular e de fácil manutenção
     
   **When** uma nova funcionalidade é adicionada
     
-  Then os recursos existentes não devem ser afetados
+  **Then** os recursos existentes não devem ser afetados
     
-  And a integração deve ser simples
+  **And** a integração deve ser simples
