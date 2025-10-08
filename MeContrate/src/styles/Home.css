@@ -344,3 +344,9 @@ body {
 .opportunity-card {
   animation: fadeIn 0.5s ease-out;
 }
+
+.skill-tag.more {
+  background: rgba(148, 163, 184, 0.2);
+  color: var(--text-muted);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}

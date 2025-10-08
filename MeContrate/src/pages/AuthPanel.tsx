@@ -125,11 +125,11 @@ const AuthPanel: React.FC = () => {
                 <Stack gap={4}>
                   <Field.Root id="email-login" required>
                     <Field.Label>Email</Field.Label>
-                    <Input value={user.email} name="email" css={{ "--focus-color": "#ff0095" }} bg="gray.900" type="email" placeholder="seuemail@exemplo.com" onChange={handleChange} />
+                    <Input value={user.email} name="email" css={{ "--focus-color": "#ff0095" }} bg="gray.900" px={3} type="email" placeholder="seuemail@exemplo.com" onChange={handleChange} />
                   </Field.Root>
                   <Field.Root id="password-login" required>
                     <Field.Label>Senha</Field.Label>
-                    <Input value={user.password} name="password" css={{ "--focus-color": "#ff0095" }} bg="gray.900" type="password" placeholder="Digite sua senha" onChange={handleChange} />
+                    <Input value={user.password} name="password" css={{ "--focus-color": "#ff0095" }} bg="gray.900" px={3} type="password" placeholder="Digite sua senha" onChange={handleChange} />
                   </Field.Root>
                   <Button type="submit" colorScheme="yellow" bg="gray.900" size="lg" border=".5px solid #ff0095" color="white" mt={4} transition="1s ease-in-out" _hover={{ bg: "#ff0095" }} >Entrar</Button>
                 </Stack>
@@ -144,19 +144,19 @@ const AuthPanel: React.FC = () => {
                 <Stack gap={4}>
                   <Field.Root id="name" required>
                     <Field.Label>Nome Completo</Field.Label>
-                    <Input value={user.fullname} name="fullname" css={{ "--focus-color": "#ff0095" }} bg="gray.900" type="text" placeholder="Seu nome" onChange={handleChange} />
+                    <Input value={user.fullname} name="fullname" css={{ "--focus-color": "#ff0095" }} bg="gray.900" px={3} type="text" placeholder="Seu nome" onChange={handleChange} />
                   </Field.Root>
                   <Field.Root id="email" required>
                     <Field.Label>Email</Field.Label>
-                    <Input value={user.email} name="email" css={{ "--focus-color": "#ff0095" }} bg="gray.900" type="email" placeholder="seuemail@exemplo.com" onChange={handleChange} />
+                    <Input value={user.email} name="email" css={{ "--focus-color": "#ff0095" }} bg="gray.900" px={3} type="email" placeholder="seuemail@exemplo.com" onChange={handleChange} />
                   </Field.Root>
                   <Field.Root id="password" required>
                     <Field.Label>Senha</Field.Label>
-                    <Input value={user.password} name="password" css={{ "--focus-color": "#ff0095" }} bg="gray.900" type="password" placeholder="Crie uma senha" onChange={handleChange} />
+                    <Input value={user.password} name="password" css={{ "--focus-color": "#ff0095" }} bg="gray.900" px={3} type="password" placeholder="Crie uma senha" onChange={handleChange} />
                   </Field.Root>
                   <Field.Root id="confirmPassword" required>
                     <Field.Label>Confirme a Senha</Field.Label>
-                    <Input name="confirmPassword" css={{ "--focus-color": "#ff0095" }} bg="gray.900" type="password" placeholder="Confirme a Senha" onChange={handleChange} />
+                    <Input name="confirmPassword" css={{ "--focus-color": "#ff0095" }} bg="gray.900" px={3} type="password" placeholder="Confirme a Senha" onChange={handleChange} />
                   </Field.Root>
                   <RadioGroup.Root mx="auto" value={value} onValueChange={(e) => setValue(e.value)}>
                   {items.map((item) => (
