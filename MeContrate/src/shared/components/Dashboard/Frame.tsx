@@ -11,7 +11,7 @@ interface FrameProps {
 export default function Frame ({ title, quantity, children }: FrameProps) {
     return (
         <Flex
-            minWidth={{base: "90dvw", md: "175px"}}
+            minWidth={{base: "90dvw", md: "175px", lg: "275px"}}
             width="fit-content"
             height="90px"
             //justifyContent={{base: "flex-start", md: "space-around"}}
@@ -26,7 +26,6 @@ export default function Frame ({ title, quantity, children }: FrameProps) {
             p={5}
             gap={3}
             cursor="pointer"
-            transition="2s ease-in-out"
             _hover={{bg:"radial-gradient(#151515, #111111) padding-box, linear-gradient(90deg, #2a5cff, #c46cff) border-box"}}
         >
             <Flex

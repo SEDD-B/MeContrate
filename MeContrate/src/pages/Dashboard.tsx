@@ -18,7 +18,6 @@ const Dashboard: React.FC = () => {
             pb={5}
             pt={5}
         >
-            
             <Flex
                 direction={{base: "column", md: "row"}}
                 flexWrap="wrap"
