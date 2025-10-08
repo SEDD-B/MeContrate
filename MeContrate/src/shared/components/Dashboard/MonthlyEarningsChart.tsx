@@ -27,13 +27,13 @@ function MonthlyEarningsChart() {
       />
       <VictoryAxis
         dependentAxis
-        tickFormat={(x) => `R$${x}`}
+        tickFormat={(x: number) => `R$${x}`}
       />
       <VictoryBar
         data={data}
         x="month"
         y="earnings"
-        labels={({ datum }) => `R$${datum.earnings}`}
+        labels={({ datum }: { datum: { earnings: number } }) => `R$${datum.earnings}`}
         labelComponent={<VictoryTooltip />}
         style={{
           data: { fill: "#4f8cff" }
