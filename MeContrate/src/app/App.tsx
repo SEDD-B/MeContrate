@@ -1,22 +1,28 @@
-import { Routes, Route } from "react-router";
-import Dashboard from "../pages/Dashboard";
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import AuthPanel from "../pages/AuthPanel";
 import { useAuth } from "../shared/context/AuthContext";
+import Home from "../pages/Home";
+import Dashboard from "../pages/Dashboard";
+import Layout from "../shared/layout/Layout";
 
 export default function App() {
   const { isAuthenticated } = useAuth();
 
   return (
-    <>
+    <Router>
       <Routes>
-        <Route path="/">
           { isAuthenticated ?
-            (<Route index element={<Dashboard />} />)
+            (
+              <Route path="/*" element={<Layout />} >
+                <Route index element={<Home />} />
+                <Route path="dashboard" element={<Dashboard />} />
+              </Route>
+            )
             :
-            (<Route index element={<AuthPanel />} />)
+            (<Route path="/" element={<AuthPanel />} />)
           }
-        </Route>
       </Routes>
-    </>
+    </Router>
   )
 }
