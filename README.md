@@ -1,6 +1,7 @@
 # MeContrate
 
 Este repositório reúne artefatos de documentação do projeto **MeContrate**, desenvolvido pela organização SEDD-B. O objetivo do projeto é centralizar requisitos, especificações e detalhes técnicos para apoiar o desenvolvimento e entendimento do sistema.
+### Bruno Klein, Gustavo Andriani, Lucas Rocco, Pedro Riva e Rhyan dos Anjos
 
 ## Sumário
 
