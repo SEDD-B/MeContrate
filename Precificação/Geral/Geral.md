@@ -4,6 +4,19 @@ Este documento consolida as informações estratégicas do projeto, incluindo es
 
 ---
 
+| 5W2H     | Pergunta                                     | Resposta para o MeContrate                                                                                                                                                              |
+| -------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| What     | O que será feito?                            | Desenvolvimento do MeContrate, um app web de checklist colaborativo com Kanban, prioridades, notificações e compartilhamento.                                                           |
+| Why      | Por que será feito?                          | Ajudar pessoas e equipes a organizar responsabilidades, evitar esquecer tarefas importantes e não perder prazos.                                                                  |
+| Where    | Onde será feito e usado?                     | Desenvolvimento remoto pelo time (online), deploy em nuvem; uso via navegador (desktop e mobile).                                                                                 |
+| When     | Quando será feito e quais marcos de entrega? | Ciclo previsto entre **6 e 12 meses** (mínimo 6 meses de desenvolvimento ativo, com possibilidade de se estender até 12 meses em caso de pendências), com entregas parciais.      |
+| Who      | Quem está envolvido?                         | Time de 11  integrantes (devs, UI/UX, QA), professores, possíveis usuários-teste e investidores-anjo (Anjos do Brasil).                                                             |
+| How      | Como será feito (método e tecnologia)?       | Desenvolvimento incremental (estilo ágil), backend + frontend separados, integração contínua, testes, monitoramento.                                                              |
+| How much | Quanto vai custar (estimativa)?              | Investimento estimado em **R$ 715.200,00** para 6 a 12 meses (bolsas para o time, infraestrutura em nuvem, ferramentas e marketing inicial, com reserva para riscos/contingência). |
+
+
+
+
 ## 1. Estimativa Orçamentária e Financeira
 
 Este tópico detalha o investimento necessário para a equipe e infraestrutura.
