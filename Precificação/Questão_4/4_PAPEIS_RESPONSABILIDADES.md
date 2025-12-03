@@ -2,7 +2,7 @@
 
 Utilizaremos a matriz **RACI** (Responsável, Autoridade, Consultado, Informado) para definir a governança.
 
-## 1. Agile Master (Autoridade)
+## 1. Agile Master/Product Owner (Autoridade)
 Responsável final por entregas mensais e métricas.
 * Planejar cerimônias (Planning, Review, Daily, Retro).
 * Remover impedimentos e garantir práticas ágeis.
