@@ -1,21 +1,16 @@
-# Planejamento do Projeto: Orçamento, Cronograma e Governança
+# 📝 5W2H - Planejamento do Projeto de Desenvolvimento
 
-Este documento consolida as informações estratégicas do projeto, incluindo estimativa orçamentária, roadmap de entregas, estrutura de equipe e definição de papéis.
+| Dimensão | Pergunta | Resposta (Síntese do Projeto) | Referência no Documento |
+| :--- | :--- | :--- | :--- |
+| **What** | O que será feito? | Desenvolvimento de um Produto Digital (Software/Plataforma) em 6 meses (Fase 1 - MVP/Estável) até 1 ano (Fase 3 - Escala/Versão 2.0). | Seção 2: Cronograma |
+| **Why** | Por que será feito? | Entregar um produto digital estável e escalável, cumprindo os marcos definidos para investidores e garantindo segurança e usabilidade (UI/UX). | Seção 5: Estratégia de Cultura e Motivação (Propósito) |
+| **Who** | Por quem será feito? | Por uma equipe multidisciplinar de 11 profissionais, incluindo Sêniores/Plenos em Desenvolvimento, Especialistas em Dados/Infra/Cibersegurança e Gestão (Agile Master). | Seção 3: Estrutura da Equipe |
+| **Where** | Onde será feito? | O desenvolvimento será realizado pela equipe remota ou interna, e a infraestrutura do produto será hospedada na nuvem, utilizando a plataforma **AWS** (Cenário 2 Intermediário). | Seção 1: Custo de Infraestrutura |
+| **When** | Quando será feito? | O projeto tem início planejado em **01/12/2025**. A Fase 1 (MVP e Entrega Estável) tem duração de 6 meses (até 31/05/2026). O prazo total pode se estender por até 1 ano (Versão 2.0). | Seção 2: Cronograma de Entregas |
+| **How** | Como será feito? | Através de uma metodologia **Ágil** (Scrum/Kanban) com foco em entregas mensais (Marcos), estrutura de papéis **RACI** para governança, e cultura de transparência e reconhecimento. | Seção 4: Definição de Papéis e Responsabilidades (RACI) e Seção 5: Estratégia de Cultura |
+| **How Much** | Quanto custará? | O custo total é estimado em **R$ 119.200,00/mês** (Equipe + AWS). O investimento total é de **R$ 715.200,00** (6 meses) a **R$ 1.430.400,00** (1 ano). | Seção 1: Estimativa Orçamentária e Financeira |
 
 ---
-
-| 5W2H     | Pergunta                                     | Resposta para o MeContrate                                                                                                                                                              |
-| -------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| What     | O que será feito?                            | Desenvolvimento do MeContrate, um app web de checklist colaborativo com Kanban, prioridades, notificações e compartilhamento.                                                           |
-| Why      | Por que será feito?                          | Ajudar pessoas e equipes a organizar responsabilidades, evitar esquecer tarefas importantes e não perder prazos.                                                                  |
-| Where    | Onde será feito e usado?                     | Desenvolvimento remoto pelo time (online), deploy em nuvem; uso via navegador (desktop e mobile).                                                                                 |
-| When     | Quando será feito e quais marcos de entrega? | Ciclo previsto entre **6 e 12 meses** (mínimo 6 meses de desenvolvimento ativo, com possibilidade de se estender até 12 meses em caso de pendências), com entregas parciais.      |
-| Who      | Quem está envolvido?                         | Time de 11  integrantes (devs, UI/UX, QA), professores, possíveis usuários-teste e investidores-anjo (Anjos do Brasil).                                                             |
-| How      | Como será feito (método e tecnologia)?       | Desenvolvimento incremental (estilo ágil), backend + frontend separados, integração contínua, testes, monitoramento.                                                              |
-| How much | Quanto vai custar (estimativa)?              | Investimento estimado em **R$ 715.200,00** para 6 a 12 meses (bolsas para o time, infraestrutura em nuvem, ferramentas e marketing inicial, com reserva para riscos/contingência). |
-
-
-
 
 ## 1. Estimativa Orçamentária e Financeira
 
