@@ -1,6 +1,6 @@
 # Definição de Papéis e Responsabilidades (RACI)
 
-Utilizaremos a matriz **RACI** (Responsible, Accountable, Consulted, Informed) para definir a governança.
+Utilizaremos a matriz **RACI** (Responsável, Autoridade, Consultado, Informado) para definir a governança.
 
 ## 1. Agile Master (Accountable)
 Responsável final por entregas mensais e métricas.
