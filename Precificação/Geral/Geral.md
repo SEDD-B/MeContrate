@@ -1,3 +1,8 @@
+# Planejamento do Projeto - MeContrate
+- O planejamento a seguir foi idealizado e produzido por: Bruno Klein, Gustavo Andriani, Lucas Rocco, Pedro Riva e Rhyan dos Anjos
+
+---
+
 # 📝 5W2H - Planejamento do Projeto de Desenvolvimento
 
 | Dimensão | Pergunta | Resposta (Síntese do Projeto) | Referência no Documento |
